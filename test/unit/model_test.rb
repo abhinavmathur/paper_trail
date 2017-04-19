@@ -189,7 +189,7 @@ class HasPaperTrailModelTest < ActiveSupport::TestCase
     end
 
     should 'be live' do
-      assert @widget.live?
+      assert @widget.paper_trail_live?
     end
 
     context 'which is then created' do
