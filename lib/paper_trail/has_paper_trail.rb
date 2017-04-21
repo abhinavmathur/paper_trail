@@ -204,6 +204,10 @@ module PaperTrail
       def paper_trail_live?
         source_version.nil?
       end
+      
+      def live?
+        live
+      end
 
       # Returns who put the object into its current state.
       def paper_trail_originator
